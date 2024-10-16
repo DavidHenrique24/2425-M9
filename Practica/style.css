@@ -46,10 +46,8 @@ h2 {
     margin: 0;
 }
 
-.menuIzquierdo li {
-    font-size: 0.9em;
-    letter-spacing: 0.075em;
-    border-top: solid 1px rgba(210, 215, 217, 0.75); /* Línea superior de cada item */
+.menuIzquierdo li { 
+    border-top: solid 1px rgba(210, 215, 217, 0.75); 
 }
 
 .menuIzquierdo li a {
@@ -67,13 +65,13 @@ h2 {
 }
 
 .matrizArticulos article {
-    width: 45%; /* Ajusta según el diseño deseado */
+    width: 45%; 
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-/* Estilos para las imágenes y el texto */
+
 .textoImagen {
     display: flex;
     align-items: center;
@@ -100,7 +98,7 @@ h2 {
 .imgIzquierdas {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Espacio entre las tarjetas */
+    gap: 20px; 
 }
 
 .imagenMenu img {
@@ -142,7 +140,7 @@ h2 {
     align-items: center;
     background-color: black; 
     color: white; 
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 
 .menuArriba h1 {
@@ -186,4 +184,80 @@ h2 {
     padding: 20px;
 }
 
+.btnDescarga{
+        background-color: rgb(241, 101, 7); 
+        color: white; 
+        padding: 10px; 
+        width: 100px; 
+        border-radius: 5px; 
+        text-decoration: none; /
+}
+
+.btnMore{
+  color: #f56a6a; 
+ border: 2px solid #f56a6a; 
+ border-radius: 5px; 
+ padding: 10px 15px; 
+ text-decoration: none; 
+}
+
+.headerContent {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.textContent {
+    max-width: 50%; /* Limitar el ancho del texto */
+}
+
+.imagenChica {
+    margin-right: 70px; /* Espacio a la derecha de la imagen */
+}
+
+.imagenChica img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.editorialDiv {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-right: auto; 
+
+}
+
+
+.editorialDiv p {
+    margin: 0; 
+    font-size: 14px; 
+    color: #777; 
+}
+
+.headerGeneral {
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    padding: 20px;
+    border-bottom: solid 3px #f56a6a; 
+}
+
+
+.headerGeneral ul {
+    list-style: none; 
+    display: flex; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.headerGeneral li {
+    margin-right: 15px; 
+    font-size: 14px; 
+}
+
+.headerGeneral a {
+    color: inherit; 
+    text-decoration: none; 
+}
 
