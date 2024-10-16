@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.contenedorPrincipal {
+    display: flex;
+}
+
+.menuIzquierdo {
+    width: 250px; 
+    padding: 20px;
+    background-color: #f5f6f7; 
+    height: 100vh; 
+}
+
+.bannerPrincipal {
+    flex-grow: 1; 
+    padding: 20px;
+}
+
+.bannerEditorial {
+    background-color: #eaeaea; 
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: #3d4449;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.38889em;
+    border-bottom: solid 3px #f56a6a; 
+}
+
+.menuIzquierdo ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;
+}
+
+.menuIzquierdo li {
+    font-size: 0.9em;
+    letter-spacing: 0.075em;
+    border-top: solid 1px rgba(210, 215, 217, 0.75); /* Línea superior de cada item */
+}
+
+.menuIzquierdo li a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+    padding: 10px; 
+}
+
+
+.matrizArticulos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.matrizArticulos article {
+    width: 45%; /* Ajusta según el diseño deseado */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilos para las imágenes y el texto */
+.textoImagen {
+    display: flex;
+    align-items: center;
+}
+
+.textoIzquierda {
+    flex: 1;
+    padding: 20px;
+}
+
+.imagenDerecha img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.menuDerecho {
+    width: 250px; 
+    padding: 20px;
+    background-color: #f4f4f4; 
+    height: 100vh; 
+}
+
+.imgIzquierdas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.imagenMenu img {
+    max-width: 230px; 
+    height: auto; 
+    display: block;
+}
+.tarjetasMenu {
+    margin: 10px 0;
+}
+
+.infoIzquierda {
+    padding: 20px;
+}
+
+.formularioBusqueda {
+    padding: 20px;
+}
+
+.formularioBusqueda input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formularioBusqueda button {
+    padding: 10px;
+    border: none;
+    background-color: #f56a6a;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menuArriba {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black; 
+    color: white; 
+    padding: 10px 20px;
+}
+
+.menuArriba h1 {
+    margin: 0;
+}
+
+.menuArriba ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menuArriba li {
+    margin-left: 20px; 
+}
+
+.menuArriba a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.menuArriba a:hover {
+    text-decoration: underline;
+}
+
+
+.contenedorPrincipal {
+    display: flex;
+}
+
+
+.menuIzquierdo {
+    width: 250px;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.bannerPrincipal {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+
