@@ -1,0 +1,102 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        thead{
+            background-color: aqua;
+        }
+        tbody{
+            background-color: beige;
+        }
+        tfoot{
+            background-color: blueviolet;
+        }
+        
+        .formulario{
+            padding: 50px;
+            border: 1px solid;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Sesion 0</h1>
+    <h2>Centro de formacion profesional fpllefia</h2>
+     <p>Lo que queramos</p> 
+    <a href="https://www.fpllefia.com" target="_blank" title="FPLLEFIA">fpllefia
+     <div id="fpllefia">
+        <p><strong>Entro a fpllefia</strong></p>
+        <img src="https://www.fpllefia.com/images/logo40web.png" alt="logo fpllefia">
+     </div>
+    </a>
+    <blockquote cite="https://www.fpllefia.com">Formacion de mas de un año</blockquote>
+
+    <ul>
+        <li <a href="#">item</li>
+        <li>item2
+           <ul class="submenu">
+             <li>subitem</li>
+             <li>subitem2</li>
+             <li>subitem3</li>
+           </ul>
+        </li>
+        <li>item3</li>
+    </ul>
+
+    <table style="border: 1px solid blue">
+        <thead>
+            <tr>
+             <td>item1</td>
+             <td>item2</td>
+             <td>item3</td>
+            </tr>
+        </thead>
+        <tbody>
+         <tr>
+             <td>item1</td>
+             <td>item2</td>
+             <td>item3</td>
+          </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+             <td>item1</td>
+             <td>item2</td>
+                <td>item3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>formularios</p>
+
+    <form class="formulario" action="//www.api.com/endpoint">
+
+        <label>Introduce tu nombre </label>
+        <input type="text" id="nombre" name="Nombre" value="Federico">
+        <label>Introduce la fecha: </label>
+        <input type="date">
+        <select name="Fruta" id="fruta">
+            <option value="Pera">PERA</option>
+            <option value="Fresa">FRESA</option>
+        </select>
+        <input name="Check" type="checkbox" checked>
+        <div>
+            <input type="radio" name="Radio">
+            <input type="radio" name="Radio">
+        </div>
+        <button>Enviar tambien </button>
+        <input type="submit" value="Enviar">
+    
+
+
+
+
+    </form>
+    
+
+</body>
+</html>

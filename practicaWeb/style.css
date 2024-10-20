@@ -1,0 +1,527 @@
+* {
+    font-family: "Open Sans", sans-serif;  /*Fuente de letras */
+    margin: 0px;  /*Margen */
+    padding: 0px;  /*Relleno */
+    list-style: none;   /*Estilo de lista ninguna */
+    box-sizing: border-box; /*Pa crear una  */
+}
+
+body {
+    font-size: 20px;  /*Cambiar la altura del texto*/
+}
+
+p {
+    color: #7F888F;  /*Cambiar el color*/
+}
+
+main {
+    display: flex; /*Para poner de lado todo */
+    width: 95%;  /*altura*/
+}
+
+#mainContent {
+    padding: 50px;
+}
+
+a {
+    text-decoration: none;   /*Para que no se ponga ninguna decoracion*/
+}
+
+/* Barra superior */
+.menuArriba {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(55, 61, 73, 0.975);
+    color: white;
+    padding: 20px;
+    position: relative; /* Cambiar a absolute o fixed si deseas que se quede fijo */
+    z-index: 1000; /* Para que no se junten los elementos*/
+}
+
+.menuArriba h1 {
+     margin: 0;     /*Para el margen del h1*/
+}
+ /*Para acomodar la lista del menu de arriba*/
+.menuArriba ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+ /*Hace espacio entre los elementos de la lista*/
+.menuArriba li {
+    margin-left: 20px; 
+}
+
+.menuArriba a {
+    color: white;
+    text-decoration: none;
+}
+/* Barra lateral */
+#lateral {
+    width: 160%;
+    background-color: #f5f6f7;
+}
+
+/* Contenedor de la barra de búsqueda */
+
+/* Fondo de buscador*/
+.search-div { 
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(210, 215, 217, 0.75);
+}
+
+/*Buscador*/
+.search-container {
+    height:px;
+    display: flex;
+    align-items: center;
+    border-radius: 0.2em;
+    padding: 0.5em;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+/*Funcionalidad de buscador*/
+.search-input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 1em;
+    color: #7a7a7a;
+}
+
+.search-icon { /*Diseño del icono de la lupa */
+    font-size: 1.2em; 
+     color: #d3d3d3;
+}
+
+/*Barrra lateral de navegacion*/
+#navegacion {
+    padding: 30px; /*Relleno */
+    background-color: #f5f6f7 ; /*color de fondo especificado */
+}
+
+/*h2 barra de navegacion izquierda*/
+#navegacion h2 {
+    color: #3d4449;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.38889em;
+    border-bottom: solid 3px #f56a6a;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+/*Elementos de la barra de navegacion */
+.item {
+    color: #3d4449;
+    margin: 0 0 20px 0;
+    padding: 3px 0 13px 0;
+    font-size: 0.9em;
+    letter-spacing: 0.075em;    /*Espacio entre letras*/
+    border-bottom: solid 1px rgba(210, 215, 217, 0.75);
+    
+}
+
+
+/*Elementos para contactar pagina web */
+#contact {
+    margin-left:30px;
+}
+/*Decoracion para seccion contactar*/
+#contact li {
+    padding: 10px 0; /* Espaciado vertical entre los elementos */
+    border-bottom: 1px solid rgba(210, 215, 217, 0.75); /* Linea debajo de cada elemento */
+}
+
+#contact i {
+    color: rgb(206, 76, 59); /* Cambia el color de los iconos a rojo */
+}
+
+#contact a {
+    color:rgb(206, 76, 59);
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+#contact a p {
+    display: inline; /* Para que el parrafo se muestre en linea con el icono */
+    margin-left: 10px; /* Espaciado entre el icono y el texto */
+}
+
+#contact li a:hover p {
+    color: rgb(197, 66, 26); /* Cambia el color del texto en hover */
+}
+
+/*Muestra el copyrigth del elemento*/
+#credenciales {
+    margin-top: 80px; /* Espaciado superior para las credenciales */
+    margin-left: 20px;
+}
+
+
+/*Se configuran las imagenes de la izquierda */
+#lat-imgs {
+    margin: 30px;
+    padding-bottom: 2.5em;
+    border-bottom: 2px solid rgba(210, 215, 217, 0.75);
+}
+
+.lat-img {
+    padding-top: 1.2em;
+    border-bottom: 1px solid rgba(210, 215, 217, 0.75);
+}
+
+.lat-1 {
+    padding-top: 0px !important;
+}
+
+.lat-img p {
+    font-size: 16.5px;
+    padding-top: 1em;
+    padding-bottom: 1.3em;
+}
+
+.lat-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.375em;
+}
+
+.lat-imgs-h3 {
+    margin: 0 30px;
+    font-size: 23px;
+}
+
+.last-lat-img {
+    border: none !important;
+}
+
+/* Contenido principal de imagenes*/
+.iconoMenu{
+    color: #f56a6a;
+    font-size:40px;
+    margin-bottom: 20px;
+}
+
+/*Edita la parte que esta encima de la primera imagen */
+.parteArriba {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(55, 61, 73, 0.975);
+    padding: 20px;
+    position: relative; /* Relativa para que este fija*/
+    border-bottom: solid 3px #f56a6a; 
+    margin-bottom: 20px;
+    
+
+}
+.parteArriba ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+}
+
+.parteArriba li {
+    margin-left: 20px;
+}
+
+.parteArriba a {
+    color:rgba(55, 61, 73, 0.975);
+    text-decoration: none;
+}
+
+.parteArriba a:hover {
+    color: #f56a6a;
+}
+
+/*Edita todo lo que se vera en la primera mirada a la pagina*/
+#presentacion {
+    display: flex;
+    padding-bottom: 4em;
+    margin-bottom: 4.5em;
+    border-bottom: 2px solid rgba(210, 215, 217, 0.75);
+}
+/*Edita el texto dentro*/
+#presentacionTexto {
+    padding-right: 24px;
+}
+
+#presentacionTexto h1 {
+    font-size: 56px;
+    color: #313538;
+}
+
+#presentacion p {
+    padding: 15px 0;
+    color: #7f888f;
+}
+
+
+#presentacion img {
+    border-radius: 10px; 
+}
+
+/*hace que todos los h3 tengan un border bottom rojo */
+h3 {
+    color: #3d4449;
+    width: 186px;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.38889em;
+    border-bottom: solid 3px #f56a6a;
+    margin-bottom: 2em;
+    padding-bottom: 0.35em;
+}
+
+/*Edita los iconos del contenedor*/
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-image {
+    margin-right: 10px; 
+}
+
+.icon-text h3 {
+    margin: 0; /* Elimina el margen superior e inferior */
+    padding-bottom: 5px; /* Agrega un pequeño espacio entre los el icono y el p */
+    font-size: 1.5em; 
+}
+
+.icon-text p {
+    margin-top: 5px; /* Espacio entre el h3 y el párrafo */
+    color: #7f888f; /* Color del párrafo */
+}
+
+/*Edita los iconos en el grid*/
+.icon-image {
+    font-size: 45px;
+    border: 2px solid rgba(210, 215, 217, 0.75);
+    height: 3em; 
+    width: 3em; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg); /*Rota el cuadrado para que se vea como rombo*/
+}
+
+.icon-image i {
+    color: #f56a6a;
+    transform: rotate(-45deg);
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    padding: 2rem;
+}
+
+/*Hace que se vean bonito y de lados las fichas de iconos*/
+#opcionesFlex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4.5em;
+    border-bottom: 2px solid rgba(210, 215, 217, 0.75);
+}
+
+/*las fichas */
+.ficha {
+    margin: 0 0 3em 3em;
+    display: flex; 
+    width: calc(50% - 3em);/*  Para poner el tamaño de las fichas */
+    align-items: center;
+}
+
+ .title {
+    font-size: 20px; /* Cambia el tamaño del texto del título aquí */
+    inline-size: auto;  /*Para ponerlo al mismo tamaño */
+    text-decoration: none;  /*sin decoracion*/
+    border-bottom: none; /* Elimina el borde */
+}
+
+
+#global-seleccion-h3 {
+    width: 260px;  /*titulo de Tarjetas grandes*/
+}
+
+/* Estilos para botones */
+
+.learnMore {
+    padding: 15px;
+    width: 150px;
+    border: 2px solid ;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #f56a6a;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Cambia el fondo del boton */
+.learnMore:hover {
+    background-color: #f76b6b;
+    
+}
+/* Cambia las letras*/
+.learnMore:hover a {
+    color: white;
+    
+}
+.learnMore a {
+    color: #f56a6a; 
+    text-decoration: none; 
+    width: 100%;
+    height: 100%;
+    text-align: center; /* Alinea el texto al centro */
+}
+/* Poner bonitas las imagenes de lado y se vean bien*/
+#seccionImgs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.contenedor .hover img,
+.lat-img .hover img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.375em; 
+    display: block;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.375em;
+}
+
+.tarjeta h4 {
+    margin: 1em 0;
+}
+
+/* Secciones de tarjetas */
+.tarjeta1,
+.tarjeta2,
+.tarjeta3,
+.tarjeta4,
+.tarjeta5,
+.tarjeta6 {
+    padding: 2em;
+ }
+/* Separa las tarjetas una por una dependiendo su posicion se coloca un borde  */
+.contenedor1 {
+    width: 32%;
+    border-right: 1px solid rgba(210, 215, 217, 0.75);
+    border-bottom: 1px solid rgba(210, 215, 217, 0.75);
+}
+
+.contenedor2 {
+    width: 35%;
+    border-bottom: 1px solid rgba(210, 215, 217, 0.75);
+    border-right: 1px solid rgba(210, 215, 217, 0.75);
+}
+
+.contenedor3 {
+    width: 32%;
+    border-bottom: 1px solid rgba(210, 215, 217, 0.75);
+}
+
+.contenedor4 {
+    width: 32%;
+    border-right: 1px solid rgba(210, 215, 217, 0.75);
+}
+
+.contenedor5 {
+    width: 35%;
+    border-right: 1px solid rgba(210, 215, 217, 0.75);
+}
+
+.contenedor6 {
+    width: 32%;
+}
+
+.contact-text {
+    margin: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+.headerGeneral {
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    padding: 20px;
+    border-bottom: solid 3px #f56a6a; 
+}
+
+
+.headerGeneral ul {
+    list-style: none; 
+    display: flex; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.headerGeneral li {
+    margin-right: 15px; 
+    font-size: 14px; 
+}
+
+.headerGeneral a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+
+.imagenIzquierda{
+    width: 100%;  /*Tamaño ocupa 100 del espacio */
+}
+
+#lat-imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre cada imagen */
+}
+
+.lat-img {
+    display: flex;  
+    align-items: center;  /*Centrar al centro los elemtnos */
+    flex-direction: column; /* Alinea la imagen y el texto en columna */
+   
+}
+
+.lat-img img {
+    max-width: 400px;
+    display: block;  /*hacer que la imagen no se modifique su tamaño */
+}
+
+.imagenIzquierda img {
+    width: 350px; /* Aumenta el tamaño de las imágenes */
+    height: auto; 
+    margin-right: 15px; 
+}
+
+.lat-img p {
+   flex: 1;  /*activar felx */
+} 
+
