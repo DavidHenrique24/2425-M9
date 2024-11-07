@@ -36,7 +36,7 @@
           </nav>
         </div>
     </header>
-    <main>
+    <main class="container my-5">
     <div class="d-flex text-center justify-content-center gap-4">
     <div class="card" style="width: 25rem;">
         <img src="https://i.pinimg.com/736x/aa/c9/a6/aac9a69680a0fe6abbc5030994ef8ca4.jpg" class="card-img-top" alt="Imatge">
@@ -62,10 +62,9 @@
       </div>
     </div>
 
-     <div class="card m-5 p-4">
+     <div class="card m-4 p-4">
     <form >
-
-      <div class="mb-3">
+      <div >
         <h5 class="card-title">Inscribite en nuestro diario</h5>
         <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -77,10 +76,33 @@
       <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
     </div>
-   
 
+    
+    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver partido</button>
 
-    </main>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Partidos de hoy</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tancar"></button>
+      </div>
+      <div class="modal-body">
+        Real Madrid - Dormmount
+      </div>
+    </div>
+  </div>
+</div>
+<br> 
+<br>
+<div class="alert alert-success bg-warning bg-opacity-50">!!! Cristiano Ronaldo hace su gol 900 !!!</div>
+</main>
+
+<footer>
+  <div class="text-center bg-body-secondary bg-opacity-30 p-4">© 2024 FC Bootstrap - Tots els drets reservats</p> 
+</div>
+
+</footer>
 
   
        <!-- <div class="container">
